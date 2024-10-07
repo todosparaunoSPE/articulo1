@@ -6,4 +6,4 @@ scipy
 scikit-learn 
 matplotlib
 pyqtdarktheme==2.1.0
-vxpy
+vxpy==1.5.2
