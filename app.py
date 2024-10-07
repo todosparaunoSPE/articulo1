@@ -5,11 +5,11 @@ Created on Mon Oct  7 12:53:42 2024
 @author: jperezr
 """
 
+
 import streamlit as st
 import yfinance as yf
 import pandas as pd
 import numpy as np
-from pypfopt import EfficientFrontier, risk_models, expected_returns
 from scipy.cluster.hierarchy import linkage, fcluster
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
@@ -58,8 +58,8 @@ initial_weights_normalized = {k: v / 100 for k, v in initial_weights.items()}
 
 # 2. Implementar el Modelo MVP
 st.write("**Modelo MVP (Mean-Variance Portfolio)**")
-mu = expected_returns.mean_historical_return(data_train).values
-S = risk_models.sample_cov(data_train)
+mu = np.mean(returns_train, axis=0).values  # Reemplazado por cálculo manual de rendimientos medios
+S = returns_train.cov().values  # Reemplazado por cálculo manual de la matriz de covarianza
 
 # Definir las variables de decisión
 weights = cp.Variable(len(tickers))
