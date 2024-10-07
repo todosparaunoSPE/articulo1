@@ -1,9 +1,8 @@
-streamlit 
+streamlit
 yfinance
 pandas
-numpy 
+numpy
 scipy
-scikit-learn 
+scikit-learn
 matplotlib
-pyqtdarktheme==2.1.0
-vxpy==1.5.2
+cvxpy
