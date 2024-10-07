@@ -2,7 +2,6 @@ streamlit
 yfinance
 pandas
 numpy 
-pypfopt 
 scipy
 scikit-learn 
 matplotlib
