@@ -6,6 +6,9 @@ Created on Thu Oct 10 13:20:23 2024
 """
 
 import streamlit as st
+import base64
+
+
 
 # Título de la aplicación
 st.title("Optimización de Portafolios")
@@ -21,3 +24,17 @@ Se utilizan datos históricos de diferentes activos para ilustrar la aplicación
 #st.sidebar.title("Información Personal")
 st.sidebar.write("Nombre: Javier Horacio Pérez Ricárdez")
 
+# Sección del proyecto final
+st.header("Proyecto Final")
+
+# Ruta del primer archivo PDF
+pdf_file_path_1 = "proyecto-final-2.pdf"  # Cambia esto a la ruta de tu primer archivo PDF
+
+# Leer el primer archivo PDF
+with open(pdf_file_path_1, "rb") as pdf_file_1:
+    pdf_bytes_1 = pdf_file_1.read()
+
+# Ofrecer la descarga del primer archivo PDF
+b64_pdf_1 = base64.b64encode(pdf_bytes_1).decode("utf-8")
+href_1 = f'<a href="data:application/octet-stream;base64,{b64_pdf_1}" download="proyecto-final-2.pdf">Descargar PDF, proyecto Final</a>'
+st.markdown(href_1, unsafe_allow_html=True)
