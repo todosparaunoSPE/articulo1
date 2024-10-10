@@ -28,7 +28,7 @@ st.sidebar.write("Nombre: Javier Horacio Pérez Ricárdez")
 st.header("Proyecto Final")
 
 # Ruta del primer archivo PDF
-pdf_file_path_1 = "proyecto-final-2.pdf"  # Cambia esto a la ruta de tu primer archivo PDF
+pdf_file_path_1 = "escrito.pdf"  # Cambia esto a la ruta de tu primer archivo PDF
 
 # Leer el primer archivo PDF
 with open(pdf_file_path_1, "rb") as pdf_file_1:
@@ -36,5 +36,5 @@ with open(pdf_file_path_1, "rb") as pdf_file_1:
 
 # Ofrecer la descarga del primer archivo PDF
 b64_pdf_1 = base64.b64encode(pdf_bytes_1).decode("utf-8")
-href_1 = f'<a href="data:application/octet-stream;base64,{b64_pdf_1}" download="proyecto-final-2.pdf">Descargar PDF, proyecto Final</a>'
+href_1 = f'<a href="data:application/octet-stream;base64,{b64_pdf_1}" download="escrito.pdf">Descargar PDF, proyecto Final</a>'
 st.markdown(href_1, unsafe_allow_html=True)
