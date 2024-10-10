@@ -18,7 +18,5 @@ El objetivo principal es evaluar la efectividad de cada método en la maximizaci
 Se utilizan datos históricos de diferentes activos para ilustrar la aplicación práctica de estos métodos y se discuten las implicaciones para los inversores en la toma de decisiones.
 """)
 
-# Sección para incluir enlaces a las páginas adicionales
-st.header("Navegación")
-st.write("Selecciona una de las siguientes páginas para ver más información:")
+
 
