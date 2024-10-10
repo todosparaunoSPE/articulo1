@@ -1,8 +1,8 @@
-streamlit
-yfinance
-pandas
-numpy
+streamlit 
+yfinance 
+pandas 
+numpy 
 scipy
-scikit-learn
 matplotlib
-cvxpy
+seaborn
+
