@@ -25,7 +25,7 @@ Se utilizan datos históricos de diferentes activos para ilustrar la aplicación
 st.sidebar.write("Nombre: Javier Horacio Pérez Ricárdez")
 
 # Sección del proyecto final
-st.header("Proyecto Final")
+st.header("Escrito")
 
 # Ruta del primer archivo PDF
 pdf_file_path_1 = "escrito.pdf"  # Cambia esto a la ruta de tu primer archivo PDF
@@ -36,5 +36,5 @@ with open(pdf_file_path_1, "rb") as pdf_file_1:
 
 # Ofrecer la descarga del primer archivo PDF
 b64_pdf_1 = base64.b64encode(pdf_bytes_1).decode("utf-8")
-href_1 = f'<a href="data:application/octet-stream;base64,{b64_pdf_1}" download="escrito.pdf">Descargar PDF, proyecto Final</a>'
+href_1 = f'<a href="data:application/octet-stream;base64,{b64_pdf_1}" download="escrito.pdf">Descargar PDF, escrito</a>'
 st.markdown(href_1, unsafe_allow_html=True)
